@@ -97,7 +97,7 @@ class _MyApp1State extends State<MyApp1> {
 
   Widget _renderRemoteVideo() {
     if (_remoteUid != null) {
-      return RtcRemoteView.SurfaceView(uid: _remoteUid);
+      return RtcRemoteView.SurfaceView(uid: _remoteUid!);
     } else {
       return Text(
         'Please wait remote user to join',
